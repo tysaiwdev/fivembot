@@ -9,12 +9,12 @@ export default class extends Command {
 
     run = async (interaction) => {
         if(interaction.type === 3) {
-            const component = this.client.components.find(cmp => cmp.id === interaction.customId)
+            const component = this.client.components.find(component => component.id === interaction.customId)
             if(component) {
                 try {
                     component.run(interaction)
                 } catch (er) {
-                    interaction.reply({ content: "<:bot:1078150970896289832> | Aconteceu algo errado ao executar essa interação!", ephemeral: true })
+                    interaction.reply({ content: ":x: | Aconteceu algo errado ao executar essa interação!", ephemeral: true })
                     this.client.log.warn('INTERACTION', er.message)
                 }
             }
@@ -25,7 +25,7 @@ export default class extends Command {
             try {
                 cmd.run(interaction)
             } catch (er) {
-                interaction.reply({ content: "<:bot:1078150970896289832> | Aconteceu algo errado ao executar essa interação!", ephemeral: true })
+                interaction.reply({ content: ":x: | Aconteceu algo errado ao executar essa interação!", ephemeral: true })
                 this.client.log.warn('INTERACTION', er.message)
             }
         }

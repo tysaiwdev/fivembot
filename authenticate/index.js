@@ -1,0 +1,1 @@
+//este script irá verificar se a key definida no .env está ativa em uma URL do servidor de authenticação

@@ -1,1 +1,4 @@
-import './src/index.js' //isso só importa o script pra esse arquivo e executa.
+
+
+
+import './src/index.js'

@@ -5,6 +5,8 @@
     "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
     "mongoose": "^7.2.2",
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1",
     "url": "^0.11.0"
   },
   "name": "bot-v4-template",
